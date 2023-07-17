@@ -22,7 +22,7 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: build
+          name: clouddriver
           path: ./build
 
       - name: Set up QEMU
