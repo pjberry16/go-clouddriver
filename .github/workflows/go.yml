@@ -1,14 +1,7 @@
 name: Build
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  workflow_run:
-    workflows: [Publish]
-    types:
-      - completed
+  workflow_call:
 jobs:
 
   build:
