@@ -36,9 +36,9 @@ jobs:
         GOOGLE_APPLICATION_CREDENTIALS: test/credentials/test-keyfile.json
 
     - uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: build/
+      with:
+        name: build
+        path: build/
 
   golangci:
     name: lint
