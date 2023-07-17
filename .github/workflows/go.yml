@@ -35,6 +35,11 @@ jobs:
       env:
         GOOGLE_APPLICATION_CREDENTIALS: test/credentials/test-keyfile.json
 
+    - uses: actions/upload-artifact@v3
+      with:
+        name: build
+        path: build/
+
   golangci:
     name: lint
     runs-on: ubuntu-latest
@@ -51,7 +56,6 @@ jobs:
           version: v1.52
 
           args: --skip-files .*_test.go --enable wsl --enable misspell --timeout 180s
-
 #   publish:
 #     name: Publish
 #     runs-on: ubuntu-latest
