@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY build/clouddriver /app
 
-RUN chmod +x /app/clouddriver
+# RUN chmod +x /app/clouddriver
 
 CMD ["/app/clouddriver"]
