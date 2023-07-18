@@ -2,7 +2,7 @@ FROM alpine:3.7
 
 WORKDIR /app
 
-COPY clouddriver /app
+COPY build/clouddriver /app
 
 RUN chmod +x /app/clouddriver
 
