@@ -1,3 +1,9 @@
 FROM alpine:3.7
 
-COPY build/clouddriver /usr/local/bin
+WORKDIR /app
+
+COPY clouddriver /app
+
+RUN chmod +x /app/clouddriver
+
+CMD ["/app/clouddriver"]
