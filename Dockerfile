@@ -6,4 +6,4 @@ COPY build/clouddriver /app
 
 # RUN chmod +x /app/clouddriver
 
-CMD ["/app/clouddriver"]
+CMD ["clouddriver"]
