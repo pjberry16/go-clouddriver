@@ -23,7 +23,6 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: clouddriver
-          path: ./build
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
