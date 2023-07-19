@@ -28,7 +28,7 @@ jobs:
         fi
 
     - name: Build
-      run: go build -o build/ -v cmd/clouddriver/clouddriver.go
+      run: go build -o build/clouddriver -v cmd/clouddriver/clouddriver.go
 
     - name: Test
       run: go test -v ./...
