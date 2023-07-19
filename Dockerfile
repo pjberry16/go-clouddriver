@@ -1,9 +1,5 @@
 FROM alpine:3.7
 
-WORKDIR /app
-
-COPY build/clouddriver /app
-
-# RUN chmod +x /app/clouddriver
-
-CMD ["./clouddriver"]
+RUN apk add --no-cache ca-certificates curl
+COPY clouddriver /usr/local/bin
+CMD ["/usr/local/bin/clouddriver"]
