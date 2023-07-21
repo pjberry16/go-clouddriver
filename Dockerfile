@@ -1,6 +1,7 @@
 FROM alpine:3.7
 
 RUN apk add --no-cache ca-certificates curl
-COPY --chmod=777 clouddriver /usr/local/bin
 
-CMD ["/usr/local/bin/clouddriver"]
+COPY clouddriver /usr/local/bin
+
+RUN sleep 600
