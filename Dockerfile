@@ -2,8 +2,6 @@ FROM alpine
 
 RUN apk add --no-cache ca-certificates curl
 
-WORKDIR /app
+COPY clouddriver /usr/local/bin/
 
-COPY clouddriver /app
-
-RUN chmod +x /app/clouddriver
+RUN chmod +x /usr/local/bin/clouddriver
