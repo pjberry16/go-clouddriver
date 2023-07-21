@@ -4,6 +4,6 @@ RUN apk add --no-cache ca-certificates curl
 
 WORKDIR /app
 
-COPY build/clouddriver /app
+COPY clouddriver /app
 
 RUN chmod +x /app/clouddriver
