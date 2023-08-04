@@ -38,7 +38,7 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: clouddriver
-        path: build/
+        path: build/clouddriver
 
   golangci:
     name: lint
